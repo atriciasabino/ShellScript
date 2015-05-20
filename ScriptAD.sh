@@ -39,7 +39,11 @@ echo "Executando Scritp"
 fi
 
 #Comandos para Adcionar a Maquina No Active Directory 
+#Tem os comandos que usam o Dominio do LSBD
 
+opt/pbis/config
+
+/opt/pbis/bin/config AssumeDefaultDomain true
 
 #Adicionar Usuario como Root no /etc/sudoers
 
@@ -51,7 +55,7 @@ echo '$User ALL=(ALL:ALL) ALL' >> /etc/sudoers
 
 #Reiniciar Para Formalaizar as Mudanças
 
-#echo 'Nãooo Se Irrite!!! Mas, precismaos reiniciar sua máquina, BLZ'
-#read -s -n 1 -p "Precione Qualquer tecla para confirmar que concorda"
+echo 'Nãooo Se Irrite!!! Mas, precismaos reiniciar sua máquina, BLZ'
+read -s -n 1 -p "Precione Qualquer tecla para confirmar que concorda"
 
-#sudo reboot 
+sudo reboot 
