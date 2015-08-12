@@ -8,8 +8,7 @@ NameAtual=$(cat /etc/hostname)
 
 echo "O Nome do Seu Hostname é $NameAtual"
 
-#Mudando Hostname da Maquina - Padrao LSBD
-
+#Mudando Hostname da Maquina -
 echo 'Por Favor, Digite um Hostname para sua Maquina Linux! :D '
 read HOSTNAME
 
@@ -39,7 +38,6 @@ echo "Executando Scritp"
 fi
 
 #Comandos para Adcionar a Maquina No Active Directory 
-#Tem os comandos que usam o Dominio do LSBD
 
 opt/pbis/config
 
